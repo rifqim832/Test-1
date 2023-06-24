@@ -1,69 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #333;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
 }
 nav .logo {
-    display: flex;
+  display: flex;
 }
 nav .logo .first-logo {
-    color: #ddd;
+  color: #ddd;
+  font-family: "Belanosima", sans-serif;
 }
 nav .logo .second-logo {
-    color: crimson;
+  font-size: 0.8em;
+  color: crimson;
+  margin-top: 10px;
+  font-family: "Belanosima", sans-serif;
 }
 nav ul {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
 }
 nav ul li {
-    list-style: none;
+  list-style: none;
 }
 nav ul a:hover {
-    color: rgb(152, 15, 43);
+  color: crimson;
 }
 nav ul a {
-    text-decoration: none;
-    color: #ddd;
-    font-size: 0.8em;
-    transition: 0.5s;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 0.8em;
+  transition: 0.5s;
 }
 
 .jumbotron {
-    display: flex;
-    width: 100%;
-    height: 600px;
-    flex-direction: column;
-    background-color: #333;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 70%;
+  height: 800px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .jumbotron .foto {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  overflow: hidden;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  order: 2;
 }
 .jumbotron .nama {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ddd;
+  color: #ddd;
+  order: 1;
 }
-.jumbotron .nama h2 {
-    font-weight: 600;
+.jumbotron .nama h1 {
+  font-size: 4em;
+  font-weight: 800;
+  font-family: "Belanosima", sans-serif;
+}
+.jumbotron .nama h1 span {
+  color: crimson;
+  font-family: "Belanosima", sans-serif;
 }
 .jumbotron .nama p {
-    font-size: 0.8em;
-} /*# sourceMappingURL=main.css.map */
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-family: "Belanosima", sans-serif;
+}
+.jumbotron .nama a {
+  display: block;
+  font-size: 2.5em;
+  color: #ddd;
+  margin-top: 20px;
+}
+.jumbotron .nama .tech-stack {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.jumbotron .nama .tech-stack p {
+  margin: 0;
+}
+.jumbotron .nama .tech-stack i {
+  font-size: 3em;
+}/*# sourceMappingURL=main.css.map */
