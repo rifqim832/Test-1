@@ -1,36 +1,41 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-$red-color: crimson;
-$black-color: #333;
-$gray-color: #ddd;
+$primary-color: crimson;
+$dark-color: #333;
+$light-color: #fff;
 
 body {
-    background-color: $black-color;
+    background-color: $dark-color;
+    height: 3000px;
 }
 
 nav {
+    position: fixed;
     display: flex;
+    width: 90%;
+    background-color: $dark-color;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    z-index: 2;
 
     .logo {
         display: flex;
 
         .first-logo {
-            color: $gray-color;
-            font-family: "Belanosima", sans-serif;
+            color: $light-color;
+            font-family: "Poppins", sans-serif;
         }
 
         .second-logo {
             font-size: 0.8em;
-            color: $red-color;
+            color: $primary-color;
             margin-top: 10px;
-            font-family: "Belanosima", sans-serif;
+            font-family: "Poppins", sans-serif;
         }
     }
 
@@ -44,78 +49,141 @@ nav {
         }
 
         a:hover {
-            color: $red-color;
+            color: $primary-color;
         }
 
         a {
             text-decoration: none;
-            color: $gray-color;
-            font-size: 0.8em;
+            color: $light-color;
             transition: 0.5s;
         }
     }
 }
 
-.jumbotron {
+.container {
     display: flex;
-    width: 70%;
-    height: 800px;
+    position: relative;
+    width: 50%;
+    height: 100vh;
     margin: auto;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
 
-    .foto {
-        width: 300px;
-        height: 300px;
-        margin-top: 50px;
-        overflow: hidden;
-        border: 3px solid $gray-color;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        order: 2;
-    }
+    .jumbotron {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        justify-content: space-between;
 
-    .nama {
-        color: $gray-color;
-        order: 1;
+        .foto {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border: 3px solid $light-color;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            order: 2;
+        }
 
-        h1 {
-            font-size: 4em;
-            font-weight: 800;
-            font-family: "Belanosima", sans-serif;
+        .nama {
+            width: 60%;
+            color: $light-color;
+            order: 1;
 
-            span {
-                color: $red-color;
-                font-family: "Belanosima", sans-serif;
+            h1 {
+                font-size: 3em;
+                font-weight: 700;
+                font-family: "Poppins", sans-serif;
+
+                span {
+                    color: $primary-color;
+                    font-family: "Poppins", sans-serif;
+                }
             }
-        }
-
-        p {
-            margin-top: 20px;
-            font-size: 1.2em;
-            font-family: "Belanosima", sans-serif;
-        }
-
-        a {
-            display: block;
-            font-size: 2.5em;
-            color: $gray-color;
-            margin-top: 20px;
-        }
-
-        .tech-stack {
-            display: flex;
-            height: 50px;
-            align-items: center;
-            justify-content: space-between;
 
             p {
-                margin: 0;
+                margin-top: 20px;
+                font-size: 1.2em;
+                font-family: "Poppins", sans-serif;
             }
 
-            i {
-                font-size: 3em;
+            a {
+                display: block;
+                font-size: 2.5em;
+                color: $light-color;
+                margin-top: 20px;
             }
+        }
+    }
+    .tech-stack {
+        display: flex;
+        position: absolute;
+        width: 60%;
+        height: 50px;
+        margin-top: 600px;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.3em;
+            color: $light-color;
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 2.5em;
+        }
+    }
+    .about {
+        position: absolute;
+
+        h2 {
+            color: $primary-color;
+            text-align: center;
+        }
+
+        .about2 {
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-between;
+
+            img {
+                border-radius: 5%;
+            }
+
+            .about3 {
+                width: 50%;
+                height: 300px;
+                color: $light-color;
+                font-weight: 300;
+                letter-spacing: 2px;
+
+                h4 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: $light-color;
+        margin-bottom: 20px;
+    }
+
+    .cart-project {
+        display: flex;
+
+        .cart-tittle {
+            width: 50%;
         }
     }
 }

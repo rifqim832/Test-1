@@ -5,38 +5,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Coba FlexBox</title>
         <link rel="stylesheet" href="css/main.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik:wght@300;400&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     </head>
-    <body>
+    <body id="home">
+        <!-- Navbar -->
         <nav>
             <div class="logo">
                 <h2 class="first-logo">MRNH</h2>
                 <h2 class="second-logo">.DEV</h2>
             </div>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Project</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
-
-        <section class="jumbotron">
-            <div class="foto">
-                <img src="img/Rifqi.jpg" alt="" />
+        <!-- Navbar End -->
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- JUMBOTRON -->
+            <div class="jumbotron">
+                <div class="foto">
+                    <img src="img/Rifqi.jpg" alt="" />
+                </div>
+                <div class="nama">
+                    <h1>
+                        Front-End <span>Junior</span> <br />
+                        Web Developer👋🏻
+                    </h1>
+                    <p>Hi, I'm M Rifqi Naufal Habibie. Student Of Informatic Enginering based in Grabagan, Tuban📍</p>
+                    <a href="https://github.com/rifqim832"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <div class="nama">
-                <h1>
-                    Front-End <span>Junior</span> <br />
-                    Web Developer👋🏻
-                </h1>
-                <p>Hi, I'm M Rifqi Naufal Habibie. Student Of Informatic Enginering <br />based in Grabagan, Tuban📍</p>
-                <a href="https://github.com/rifqim832"><i class="fa-brands fa-square-github"></i></a>
-                <div class="tech-stack">
-                    <p>Tech Stack |</p>
-                    <i class="fa-brands fa-html5" style="color: #ff6120"></i>
-                    <i class="fa-brands fa-css3-alt" style="color: #0387c7"></i>
-                    <i class="fa-brands fa-sass" style="color: #cb6597"></i>
+            <!-- JUMBOTRON END -->
+            <!-- SKILL -->
+            <div class="tech-stack">
+                <p>Tech Stack |</p>
+                <i class="fa-brands fa-html5" style="color: #ff6120"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #0387c7"></i>
+                <i class="fa-brands fa-sass" style="color: #cb6597"></i>
+                <i class="fa-brands fa-git-alt" style="color: #ef5031"></i>
+            </div>
+        </div>
+        <!-- SKILL END -->
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <div class="about2">
+                        <img src="img/mrnh.jpg" alt="" />
+                        <div class="about3">
+                            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla unde at perferendis doloribus officia, magnam obcaecati dolor exercitationem totam maiores aut quis eligendi odit saepe libero earum beatae
+                                repudiandae, modi accusamus molestias explicabo placeat mollitia! Exercitationem maiores sapiente corrupti beatae! Alias excepturi doloribus ad sed debitis corporis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT END -->
+        <!-- PROJECT -->
+        <section id="project">
+            <div class="container">
+                <h2>Project</h2>
+                <h3>Each project is a unique of development</h3>
+                <div class="cart-project">
+                    <img src="img/project3.jpg" alt="" />
+                    <div class="cart-tittle">
+                        <h3>Coffee Shop</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut velit quam dolor distinctio eaque vel cumque qui reprehenderit nulla!</p>
+                    </div>
                 </div>
             </div>
         </section>
