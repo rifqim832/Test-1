@@ -34,7 +34,7 @@ nav {
         .second-logo {
             font-size: 0.8em;
             color: $primary-color;
-            margin-top: 10px;
+            margin-top: 13px;
             font-family: "Poppins", sans-serif;
         }
     }
@@ -174,16 +174,77 @@ nav {
         margin-bottom: 20px;
     }
 
-    h3 {
-        color: $light-color;
-        margin-bottom: 20px;
-    }
-
     .cart-project {
         display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        img {
+            display: block;
+            width: 400px;
+            height: 300px;
+        }
 
         .cart-tittle {
-            width: 50%;
+            width: 40%;
+            text-align: center;
+            color: $light-color;
+
+            h3 {
+                color: #d69f74;
+            }
+
+            p {
+                letter-spacing: 2px;
+                margin-top: 10px;
+            }
+            .code {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 70px;
+
+                a {
+                    font-size: 1.2em;
+                    text-decoration: none;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .contact2 {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                color: $light-color;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding: 12px;
+                background-color: $dark-color;
+                border: 2px solid $light-color;
+                border-radius: 10px;
+            }
+
+            textarea {
+                background-color: $dark-color;
+                border: 2px solid $light-color;
+                border-radius: 10px;
+            }
+        }
+        button {
+            color: $light-color;
+            padding: 10px 30px;
+            background-color: $primary-color;
+            border-radius: 10px;
         }
     }
 }

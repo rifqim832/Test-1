@@ -29,7 +29,7 @@ nav .logo .first-logo {
 nav .logo .second-logo {
   font-size: 0.8em;
   color: crimson;
-  margin-top: 10px;
+  margin-top: 13px;
   font-family: "Poppins", sans-serif;
 }
 nav ul {
@@ -148,13 +148,67 @@ nav ul a {
   color: crimson;
   margin-bottom: 20px;
 }
-.container h3 {
-  color: #fff;
-  margin-bottom: 20px;
-}
 .container .cart-project {
   display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.container .cart-project img {
+  display: block;
+  width: 400px;
+  height: 300px;
 }
 .container .cart-project .cart-tittle {
-  width: 50%;
+  width: 40%;
+  text-align: center;
+  color: #fff;
+}
+.container .cart-project .cart-tittle h3 {
+  color: #d69f74;
+}
+.container .cart-project .cart-tittle p {
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.container .cart-project .cart-tittle .code {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.container .cart-project .cart-tittle .code a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+.container .contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .contact .contact2 {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.container .contact .contact2 label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .contact .contact2 input {
+  padding: 12px;
+  background-color: #333;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.container .contact .contact2 textarea {
+  background-color: #333;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.container .contact button {
+  color: #fff;
+  padding: 10px 30px;
+  background-color: crimson;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
