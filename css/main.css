@@ -148,6 +148,11 @@ nav ul a {
   color: crimson;
   margin-bottom: 20px;
 }
+.container .text2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
 .container .cart-project {
   display: flex;
   justify-content: space-between;
@@ -194,6 +199,7 @@ nav ul a {
 .container .contact .contact2 label {
   color: #fff;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .container .contact .contact2 input {
   padding: 12px;
@@ -211,4 +217,10 @@ nav ul a {
   padding: 10px 30px;
   background-color: crimson;
   border-radius: 10px;
+}
+
+footer {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
