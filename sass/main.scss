@@ -58,6 +58,78 @@ nav {
             transition: 0.5s;
         }
     }
+
+    .menu-toggle input {
+        position: absolute;
+        width: 41px;
+        height: 28px;
+        left: -6px;
+        top: -3px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu-toggle {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: #000;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+
+    .menu-toggle span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+
+    .menu-toggle span:nth-child(4) {
+        transform-origin: 0 100%;
+    }
+
+    .menu-toggle input:checked ~ span:nth-child(2) {
+        background-color: #fff;
+        transform: rotate(45deg) translate(-1px, -1px);
+        -webkit-transform: rotate(45deg) translate(-1px, -1px);
+        -moz-transform: rotate(45deg) translate(-1px, -1px);
+        -ms-transform: rotate(45deg) translate(-1px, -1px);
+        -o-transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    .menu-toggle input:checked ~ span:nth-child(4) {
+        background-color: #fff;
+        transform: rotate(-45deg) translate(-1px, 0);
+        -webkit-transform: rotate(-45deg) translate(-1px, 0);
+        -moz-transform: rotate(-45deg) translate(-1px, 0);
+        -ms-transform: rotate(-45deg) translate(-1px, 0);
+        -o-transform: rotate(-45deg) translate(-1px, 0);
+    }
+
+    .menu-toggle input:checked ~ span:nth-child(3) {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
 }
 
 .container {
@@ -71,7 +143,6 @@ nav {
 
     .jumbotron {
         display: flex;
-        position: absolute;
         width: 100%;
         height: 400px;
         align-items: center;
@@ -83,7 +154,6 @@ nav {
             overflow: hidden;
             border: 3px solid $light-color;
             border-radius: 50%;
-            margin-bottom: 20px;
             order: 2;
         }
 
@@ -260,4 +330,72 @@ footer {
     color: $light-color;
     padding-bottom: 10px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+
+        .jumbotron {
+            display: flex;
+            height: 550px;
+            flex-direction: column;
+            align-items: start;
+
+            .foto {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+                order: 1;
+            }
+
+            .nama {
+                width: 100%;
+                order: 2;
+            }
+        }
+
+        .about {
+            .about2 {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                }
+
+                .about3 {
+                    width: 80%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .cart-project {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .cart-tittle {
+                width: 60%;
+
+                .code {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 569px) {
+    nav {
+        font-size: 0.8em;
+    }
+    .jumbotron {
+        .foto {
+            display: none;
+        }
+    }
 }
